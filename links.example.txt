@@ -1,0 +1,5 @@
+# 每行一个飞书文档或知识库链接
+# 空行和以 # 开头的行会被忽略
+
+https://example.feishu.cn/docx/xxxxxxxxxxxx
+https://example.feishu.cn/wiki/xxxxxxxxxxxx

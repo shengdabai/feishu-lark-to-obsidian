@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Feishu/Lark to Obsidian",
+  "version": "0.1.0",
+  "description": "One-click export shared Feishu pages to Markdown and raw text in your Downloads folder.",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.feishu.cn/*",
+    "https://*.larksuite.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "下载当前飞书页面为 Markdown"
+  }
+}
