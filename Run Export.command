@@ -1,5 +1,5 @@
 #!/bin/zsh
-cd "/Users/adam/Desktop/Feishu To Obsidian" || exit 1
+cd "$(dirname "$0")" || exit 1
 npm run export
 echo ""
 echo "按任意键关闭..."
