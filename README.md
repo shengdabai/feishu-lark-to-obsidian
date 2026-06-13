@@ -4,40 +4,41 @@ One-click + batch export of Feishu/Lark docs to clean, Obsidian-ready Markdown (
 
 ## Business Context
 
-- **Category:** browser productivity tool
-- **Audience:** knowledge workers and learners who spend most of their workflow in the browser.
+- **Category:** security and governance tool
+- **Audience:** builders and operators who need safer repositories, cleaner handoffs, and repeatable security checks.
 - **Repository status:** Public repository. Keep examples, docs, and issues free of credentials, private data, and machine-specific paths.
 - **Topics:** browser-extension, export, feishu, lark, markdown, markdown-export, obsidian, playwright
 
 ## What This Project Is For
 
 - One-click + batch export of Feishu/Lark docs to clean, Obsidian-ready Markdown (browser extension + Playwright CLI).
-- Compress repetitive browser work into a focused user interaction.
-- Keep user control and privacy boundaries clear.
+- Find repository risks early without exposing secrets in reports.
+- Make security review repeatable across public and private codebases.
 
 ## Where It Fits
 
-This repository focuses on reducing browser friction while keeping installation, permissions, and data boundaries visible.
+This repository belongs in the trust-and-safety layer of the workbench: it helps make code, configuration, and public handoffs safer before they are reused or shown to clients.
 
 ## Technical Overview
 
 - **Primary language:** JavaScript
-- **Detected stack:** JavaScript, Node.js / JavaScript tooling
+- **Detected stack:** JavaScript, Node.js
 - **Default branch:** `main`
 - **Visibility:** `PUBLIC`
 - **License:** MIT License
 
 ## Repository Map
 
+- `src`
 - `Check Environment.command`
 - `LICENSE`
 - `README.md`
-- `README.zh-CN.md`
 - `Run Export.command`
 - `SECURITY.md`
 - `browser-extension`
 - `links.example.txt`
-- `src`
+- `package-lock.json`
+- `package.json`
 
 ## Quick Start
 
@@ -50,6 +51,7 @@ npm start
 
 | Command | Purpose |
 |---|---|
+| `npm install` | Install project dependencies. |
 | `npm start` | node src/index.mjs |
 
 ## Operating Notes
@@ -57,12 +59,12 @@ npm start
 - Keep real credentials out of the repository. Use local environment files, GitHub repository secrets, or the deployment platform secret manager.
 - If a `.env.example` file exists, treat it as documentation only; never commit filled-in `.env` files.
 - Before publishing screenshots, demos, or client examples, remove private names, internal paths, account IDs, and API endpoints.
-- The `Repository Hygiene` workflow is intended as a lightweight guardrail, not a replacement for product-specific tests.
+- The `Repository Hygiene` workflow is a lightweight guardrail, not a replacement for product-specific tests.
 
 ## Delivery Checklist
 
 - [ ] README describes the user, business outcome, and operating boundary.
-- [ ] Setup or preview commands are current.
+- [ ] Setup or preview commands are current and do not rely on private machine state.
 - [ ] No real secrets, private user data, or machine-local state are tracked.
 - [ ] Screenshots, demos, or sample outputs are safe to share publicly when the repository is public.
 - [ ] Product-specific tests or smoke checks are documented before production use.
