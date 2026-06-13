@@ -5,3 +5,18 @@ browser-profile
 logs
 *.log
 links.txt
+# Codex governance: local secrets and machine state
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_dsa
+.npmrc
+.DS_Store
+.omc/
+.codex/
+.claude/local/
